@@ -23,5 +23,5 @@ struct LineView: View {
 }
 
 #Preview {
-    LineView(imageName: "clock.fill", leftText: "Mardi", rightText:"Right")
+    LineView(imageName: "clock", leftText: "Mardi", rightText:"Right")
 }
