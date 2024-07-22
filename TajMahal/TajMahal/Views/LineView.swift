@@ -18,10 +18,12 @@ struct LineView: View {
             Spacer()
             Text(rightText)
         }
+        .font(.caption)
+        .opacity(0.6)
         .padding()
     }
 }
 
 #Preview {
-    LineView(imageName: "clock", leftText: "Mardi", rightText:"Right")
+    LineView(imageName: "clock", leftText: "12 Avenue de la Brique - 75010 Paris", rightText:"Right")
 }

@@ -12,14 +12,15 @@ struct WelcomeView: View {
     var body: some View {
         NavigationStack {
             VStack {
+                Spacer()
                 Image("TajMahal")
                     .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(height: 423)
+                    .scaledToFill()
+                    .padding(.horizontal)
                 HStack {
-                    VStack {
+                    VStack(alignment: .leading) {
                         Text("Restaurent Indien")
-                            .font(.caption)
+                            .font(.caption2)
                             .opacity(0.6)
                         Text("Taj Mahal")
                             .font(.headline)
@@ -27,11 +28,13 @@ struct WelcomeView: View {
                     Spacer()
                     Image("Logo")
                         .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .foregroundStyle(.red)
-                }
-                .padding()
-                VStack {
+                        .scaledToFill()
+                        .frame(width: 40, height: 40)
+                        .colorInvert()
+                        .opacity(0.4)
+                  }
+                .padding(.horizontal)
+                VStack(spacing: 0) {
                     LineView(imageName: "clock", leftText: "Mardi", rightText: "Right")
                     LineView(imageName: "arrow.up.bin", leftText: "Type de service", rightText: "A emporter")
                     LineView(imageName: "location.circle", leftText: "12 Avenue de la Brique - 75010 Paris", rightText: "")
@@ -50,12 +53,12 @@ struct WelcomeView: View {
                             .font(.title3)
                             .bold()
                     }
+
                 }
+                Spacer()
             }
-            .padding()
-            Spacer()
+            .padding([.horizontal, .bottom])
         }
-      
     }
 }
 
