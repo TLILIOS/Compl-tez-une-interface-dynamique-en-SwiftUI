@@ -15,6 +15,7 @@
 		42E9DCBF2AF11439007CE7D0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */; };
 		42E9DCC22AF117AE007CE7D0 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DCC12AF117AE007CE7D0 /* MenuView.swift */; };
 		5745F62A2C4DB99E008D528B /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745F6292C4DB99E008D528B /* LineView.swift */; };
+		574B2C572C50689000A713E3 /* DishDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574B2C562C50689000A713E3 /* DishDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		42E9DCC02AF11662007CE7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		42E9DCC12AF117AE007CE7D0 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		5745F6292C4DB99E008D528B /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		574B2C562C50689000A713E3 /* DishDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +62,10 @@
 		42E9DCAC2AF11136007CE7D0 /* TajMahal */ = {
 			isa = PBXGroup;
 			children = (
-				42E9DCC02AF11662007CE7D0 /* Info.plist */,
 				42E9DCBB2AF113D1007CE7D0 /* Views */,
 				42E9DCAD2AF11136007CE7D0 /* TajMahalApp.swift */,
 				42E9DCB12AF11138007CE7D0 /* Assets.xcassets */,
+				42E9DCC02AF11662007CE7D0 /* Info.plist */,
 				42E9DCB32AF11138007CE7D0 /* Preview Content */,
 				428D2B502AFA851900BBA4F5 /* Model.swift */,
 				428D2B522AFA882700BBA4F5 /* ViewModel.swift */,
@@ -84,6 +86,7 @@
 			children = (
 				42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */,
 				42E9DCC12AF117AE007CE7D0 /* MenuView.swift */,
+				574B2C562C50689000A713E3 /* DishDetailView.swift */,
 				5745F6292C4DB99E008D528B /* LineView.swift */,
 			);
 			path = Views;
@@ -160,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				428D2B532AFA882700BBA4F5 /* ViewModel.swift in Sources */,
+				574B2C572C50689000A713E3 /* DishDetailView.swift in Sources */,
 				42E9DCBF2AF11439007CE7D0 /* WelcomeView.swift in Sources */,
 				5745F62A2C4DB99E008D528B /* LineView.swift in Sources */,
 				42E9DCC22AF117AE007CE7D0 /* MenuView.swift in Sources */,

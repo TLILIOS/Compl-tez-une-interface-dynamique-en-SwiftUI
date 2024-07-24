@@ -13,17 +13,19 @@ struct WelcomeView: View {
         NavigationStack {
             VStack {
                 Spacer()
+                    .padding(.top)
                 Image("TajMahal")
                     .resizable()
+                    .frame(height: 360)
                     .scaledToFill()
-                    .padding(.horizontal)
+                    .padding()
                 HStack {
                     VStack(alignment: .leading) {
                         Text("Restaurent Indien")
-                            .font(.caption2)
-                            .opacity(0.6)
+                            .font(.callout)
+                            .foregroundStyle(.secondary)
                         Text("Taj Mahal")
-                            .font(.headline)
+                            .font(.title)
                     }
                     Spacer()
                     Image("Logo")
@@ -31,7 +33,7 @@ struct WelcomeView: View {
                         .scaledToFill()
                         .frame(width: 40, height: 40)
                         .colorInvert()
-                        .opacity(0.4)
+                        .opacity(0.5)
                   }
                 .padding(.horizontal)
                 VStack(spacing: 0) {
@@ -52,13 +54,18 @@ struct WelcomeView: View {
                             .foregroundColor(.white)
                             .font(.title3)
                             .bold()
+                            
                     }
-
+                    .padding()
+                    
                 }
+               
                 Spacer()
             }
             .padding([.horizontal, .bottom])
+            
         }
+    
     }
 }
 

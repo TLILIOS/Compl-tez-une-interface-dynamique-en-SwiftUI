@@ -18,8 +18,8 @@ struct LineView: View {
             Spacer()
             Text(rightText)
         }
-        .font(.caption)
-        .opacity(0.6)
+        .font(.subheadline)
+        .foregroundStyle(.secondary)
         .padding()
     }
 }
