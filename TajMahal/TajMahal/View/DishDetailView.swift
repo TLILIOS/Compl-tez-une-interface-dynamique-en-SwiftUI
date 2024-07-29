@@ -8,15 +8,26 @@
 import SwiftUI
 
 struct DishDetailView: View {
+     
+    
     var dish: Dish
     var body: some View {
+        
         VStack(alignment: .leading ) {
             Spacer()
-            Image("Tikka Masala")
-                .resizable()
-                .scaledToFill()
-                .cornerRadius(8)
-                .padding(.bottom)
+            ZStack {
+                Image(dish.imageName)
+                    .resizable()
+                    .frame(height: 467)
+                    .cornerRadius(8)
+// Try To fixe this
+//                SpicyHotLevelView()
+                SpiceLevelView(spiceLevel: dish.spiceLevel)
+                    .offset(x: 130, y: -210)
+                    
+            }
+            Spacer()
+            Spacer()
             Text("Allergènes:")
                 .padding(.bottom)
             Text(dish.description)
@@ -30,7 +41,9 @@ struct DishDetailView: View {
             Spacer()
         }
         .padding()
+        .navigationTitle(dish.name)
     }
+        
         
 }
 
