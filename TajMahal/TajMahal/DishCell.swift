@@ -11,39 +11,44 @@ struct DishCell: View {
     var spiceLevel: SpiceLevel
     var dish: Dish
     var body: some View {
+        
         HStack {
             Image(dish.imageName)
                 .resizable()
-                .scaledToFit()
-                .frame(height: 80)
+                .scaledToFill()
+                .frame(width: 112, height: 86)
                 .aspectRatio(contentMode: .fill)
                 .cornerRadius(10)
-           VStack(alignment: .leading, spacing: 8) {
+            VStack(alignment: .leading, spacing: 8) {
                 Text(dish.name)
-                    .font(.headline)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.8)
+                    .font(.custom("PlusJakartaSans-Regular", size: 14))
+                
                 Text(dish.description)
-                    .font(.subheadline)
+                    .font(.custom("PlusJakartaSans-Regular", size: 12))
                     .foregroundStyle(.secondary)
-                    .lineLimit(2)
-                    .minimumScaleFactor(0.5)
-               HStack {
-                   Text("\(dish.price) €")
-                   Spacer()
- // Try To fixe
-//                   SpicyHotLevelView()
-                   SpiceLevelView(spiceLevel: dish.spiceLevel)
-                   
-                   
-               }
+                HStack {
+                    Text("\(dish.price) €")
+                        .font(.custom("PlusJakartaSans-Regular", size: 12))
+                    Spacer()
+                    SpiceLevelView(spiceLevel: dish.spiceLevel)
+                }
             }
+            
         }
         .padding()
-                }
-}
-
-#Preview {
+        .background(
+        RoundedRectangle(cornerRadius: 15)
+            .fill(Color.white)
+            .shadow(color: .black.opacity(0.2), radius: 5, x: 0, y: 2)
+        )
+        .padding(.vertical, 5)
+        
+    }
    
-    DishCell(spiceLevel: .hot, dish: ViewModel.mainCourseArray[0])
+    
 }
+    #Preview {
+        
+        DishCell(spiceLevel: .hot, dish: ViewModel.mainCourseArray[0])
+    }
+

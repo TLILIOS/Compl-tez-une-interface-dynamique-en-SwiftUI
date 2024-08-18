@@ -19,6 +19,8 @@
 		57195ADD2C52561D00FC9630 /* SpicyMediumLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57195ADC2C52561D00FC9630 /* SpicyMediumLevelView.swift */; };
 		57195ADF2C52563F00FC9630 /* SpicyLightLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57195ADE2C52563E00FC9630 /* SpicyLightLevelView.swift */; };
 		57195AE32C585C1600FC9630 /* SpiceLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57195AE22C585C1600FC9630 /* SpiceLevelView.swift */; };
+		57268FAE2C6D1E0B00E0AF2F /* PlusJakartaSans-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57268FAD2C6D1E0B00E0AF2F /* PlusJakartaSans-VariableFont_wght.ttf */; };
+		57268FB12C6D20B200E0AF2F /* PlusJakartaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57268FB02C6D20B200E0AF2F /* PlusJakartaSans-Regular.ttf */; };
 		5745F62A2C4DB99E008D528B /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745F6292C4DB99E008D528B /* LineView.swift */; };
 		574B2C572C50689000A713E3 /* DishDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574B2C562C50689000A713E3 /* DishDetailView.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +40,8 @@
 		57195ADC2C52561D00FC9630 /* SpicyMediumLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpicyMediumLevelView.swift; sourceTree = "<group>"; };
 		57195ADE2C52563E00FC9630 /* SpicyLightLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpicyLightLevelView.swift; sourceTree = "<group>"; };
 		57195AE22C585C1600FC9630 /* SpiceLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiceLevelView.swift; sourceTree = "<group>"; };
+		57268FAD2C6D1E0B00E0AF2F /* PlusJakartaSans-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		57268FAF2C6D20B200E0AF2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = "Base.lproj/PlusJakartaSans-Regular.ttf"; sourceTree = "<group>"; };
 		5745F6292C4DB99E008D528B /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		574B2C562C50689000A713E3 /* DishDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +76,7 @@
 		42E9DCAC2AF11136007CE7D0 /* TajMahal */ = {
 			isa = PBXGroup;
 			children = (
+				57268FA32C6BD7D200E0AF2F /* Font */,
 				57195AD82C51627700FC9630 /* Model */,
 				57195AD92C5162AE00FC9630 /* View */,
 				57195AD62C515E2F00FC9630 /* DishCell.swift */,
@@ -113,6 +118,15 @@
 				57195ADE2C52563E00FC9630 /* SpicyLightLevelView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		57268FA32C6BD7D200E0AF2F /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				57268FB02C6D20B200E0AF2F /* PlusJakartaSans-Regular.ttf */,
+				57268FAD2C6D1E0B00E0AF2F /* PlusJakartaSans-VariableFont_wght.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,7 +188,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				42E9DCB52AF11138007CE7D0 /* Preview Assets.xcassets in Resources */,
+				57268FB12C6D20B200E0AF2F /* PlusJakartaSans-Regular.ttf in Resources */,
 				42E9DCB22AF11138007CE7D0 /* Assets.xcassets in Resources */,
+				57268FAE2C6D1E0B00E0AF2F /* PlusJakartaSans-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +217,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		57268FB02C6D20B200E0AF2F /* PlusJakartaSans-Regular.ttf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57268FAF2C6D20B200E0AF2F /* Base */,
+			);
+			name = "PlusJakartaSans-Regular.ttf";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		42E9DCB62AF11138007CE7D0 /* Debug */ = {

@@ -17,41 +17,21 @@ struct SpiceLevelView: View {
                     Capsule()
                         .frame(width: 74, height: 22)
                         .foregroundStyle(.white)
-                    HStack(spacing: 0) {
-                        Text("🌶️")
-                        Text("🌶️")
-                            .opacity(0.4)
-                        Text("🌶️")
-                            .opacity(0.4)
-                    }
+                    SpicyLightLevelView()
                 }
             case .medium:
                 ZStack {
                     Capsule()
                         .frame(width: 74, height: 22)
                         .foregroundStyle(.white)
-                    HStack(spacing: 0) {
-                        Text("🌶️")
-                        
-                        Text("🌶️")
-                        
-                        Text("🌶️")
-                            .opacity(0.4)
-                    }
-                    
+                    SpicyMediumLevelView()
                 }
             case .hot:
                 ZStack {
                     Capsule()
                         .frame(width: 74, height: 22)
                         .foregroundStyle(.white)
-                    HStack(spacing: 0) {
-                        Text("🌶️")
-                        
-                        Text("🌶️")
-                        
-                        Text("🌶️")
-                    }
+                    SpicyHotLevelView()
                 }
             }
            
@@ -61,5 +41,5 @@ struct SpiceLevelView: View {
 }
 
 #Preview {
-    SpiceLevelView(spiceLevel: .hot)
+    SpiceLevelView(spiceLevel: .light)
 }

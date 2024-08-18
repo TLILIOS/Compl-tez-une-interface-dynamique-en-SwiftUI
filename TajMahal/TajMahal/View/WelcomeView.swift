@@ -13,19 +13,18 @@ struct WelcomeView: View {
         NavigationStack {
             VStack {
                 Spacer()
-                    .padding(.top)
                 Image("TajMahal")
                     .resizable()
-                    .frame(height: 360)
+                    .frame(width: 335, height: 423)
                     .scaledToFill()
                     .padding()
                 HStack {
                     VStack(alignment: .leading) {
                         Text("Restaurent Indien")
-                            .font(.callout)
+                            .font(.custom("PlusJakartaSans-Regular", size: 12))
                             .foregroundStyle(.secondary)
                         Text("Taj Mahal")
-                            .font(.title)
+                            .font(.custom("PlusJakartaSans-Regular", size: 18))
                     }
                     Spacer()
                     Image("Logo")
@@ -36,35 +35,39 @@ struct WelcomeView: View {
                         .opacity(0.5)
                   }
                 .padding(.horizontal)
-                VStack(spacing: 0) {
-                    LineView(imageName: "clock", leftText: "Mardi", rightText: "Right")
+                VStack(spacing: -20) {
+                    LineView(imageName: "clock", leftText: "Mardi", rightText: "11h30 - 14h30・18h30 - 22h00")
                     LineView(imageName: "arrow.up.bin", leftText: "Type de service", rightText: "A emporter")
-                    LineView(imageName: "location.circle", leftText: "12 Avenue de la Brique - 75010 Paris", rightText: "")
+                    LineView(imageName: "location", leftText: "12 Avenue de la Brique - 75010 Paris", rightText: "")
                     LineView(imageName: "globe", leftText: "www.tajmahal.fr", rightText: "")
                     LineView(imageName: "phone", leftText: "0612345678", rightText: "")
                 }
+                
+
                 NavigationLink {
                     MenuView()
                 } label : {
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
+                            .frame(width: 335, height: 40)
                             .foregroundStyle(.customRed)
                             .frame(height: 40)
                         Text("Accéder au menu")
+                            .font(.custom("PlusJakartaSans-Regular", size: 16))
                             .foregroundColor(.white)
-                            .font(.title3)
                             .bold()
                             
                     }
-                    .padding()
+
                     
                 }
-               
+                
                 Spacer()
-            }
+                    
+            } 
             .padding([.horizontal, .bottom])
             
-        }
+        } 
     
     }
 }

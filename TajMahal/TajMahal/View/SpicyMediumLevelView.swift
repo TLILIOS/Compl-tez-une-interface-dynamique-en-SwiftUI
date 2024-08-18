@@ -13,12 +13,10 @@ struct SpicyMediumLevelView: View {
             Capsule()
                 .frame(width: 74, height: 22)
                 .foregroundStyle(.white)
-            HStack(spacing: 0) {
-                Text("🌶️")
-                
-                Text("🌶️")
-                
-                Text("🌶️")
+            HStack {
+                Image("Piment")
+                Image("Piment")
+                Image("Piment")
                     .opacity(0.4)
             }
             

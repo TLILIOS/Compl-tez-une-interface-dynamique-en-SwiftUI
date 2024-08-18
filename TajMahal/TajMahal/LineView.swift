@@ -18,7 +18,7 @@ struct LineView: View {
             Spacer()
             Text(rightText)
         }
-        .font(.subheadline)
+        .font(.custom("PlusJakartaSans-Regular", size: 12))
         .foregroundStyle(.secondary)
         .padding()
     }
