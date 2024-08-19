@@ -53,9 +53,18 @@ struct MenuView: View {
                 }
                 }
             .background(Color.customGray)
-                .navigationTitle("Menu")
-                        .font(.custom("PlusJakartaSans-Regular", size: 18))
+            //The ToolbarItem Title MENU
+                .navigationTitle("")
                 .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .principal) {
+                        Text("Menu")
+                            .font(.custom("PlusJakartaSans-Regular", size: 18))
+                            .bold()
+                    }
+                }
+            
+            //Button chevron.left to GoBack
                 .toolbar {
                     ToolbarItem(placement: .topBarLeading) {
                         Button(action: {

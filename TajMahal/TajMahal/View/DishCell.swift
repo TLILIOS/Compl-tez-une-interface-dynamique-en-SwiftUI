@@ -41,9 +41,9 @@ struct DishCell: View {
         }
         .padding()
         .background(
-        RoundedRectangle(cornerRadius: 15)
+        RoundedRectangle(cornerRadius: 10)
             .fill(Color.white)
-            .shadow(color: .black.opacity(0.2), radius: 5, x: 0, y: 2)
+//            .shadow(color: .black.opacity(0.2), radius: 5, x: 0, y: 2)
         )
         .padding(.vertical, 5)
         

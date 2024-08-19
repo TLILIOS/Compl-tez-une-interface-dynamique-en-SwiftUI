@@ -25,6 +25,7 @@ struct WelcomeView: View {
                             .foregroundStyle(.secondary)
                         Text("Taj Mahal")
                             .font(.custom("PlusJakartaSans-Regular", size: 18))
+                            .bold()
                     }
                     Spacer()
                     Image("Logo")
@@ -36,11 +37,11 @@ struct WelcomeView: View {
                   }
                 .padding(.horizontal)
                 VStack(spacing: -20) {
-                    LineView(imageName: "clock", leftText: "Mardi", rightText: "11h30 - 14h30・18h30 - 22h00")
-                    LineView(imageName: "arrow.up.bin", leftText: "Type de service", rightText: "A emporter")
-                    LineView(imageName: "location", leftText: "12 Avenue de la Brique - 75010 Paris", rightText: "")
-                    LineView(imageName: "globe", leftText: "www.tajmahal.fr", rightText: "")
-                    LineView(imageName: "phone", leftText: "0612345678", rightText: "")
+                    LineView(image: "Vector", leftText: "Mardi", rightText: "11h30 - 14h30・18h30 - 22h00")
+                    LineView(image: "Pan", leftText: "Type de service", rightText: "A emporter")
+                    LineView(image: "Localisation", leftText: "12 Avenue de la Brique - 75010 Paris", rightText: "")
+                    LineView(image: "Globe", leftText: "www.tajmahal.fr", rightText: "")
+                    LineView(image: "Téléphone", leftText: "0612345678", rightText: "")
                 }
                 
 

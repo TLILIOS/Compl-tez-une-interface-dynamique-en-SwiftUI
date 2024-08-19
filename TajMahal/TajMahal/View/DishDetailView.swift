@@ -41,9 +41,16 @@ struct DishDetailView: View {
             .lineLimit(nil)
         }
         .padding()
-        .navigationTitle(dish.name)
-        .font(.custom("PlusJakartaSans-Regular", size: 12))
-        .navigationBarTitleDisplayMode(.inline)
+        .navigationTitle("")// Hide Default Title to use custom one
+        .toolbar {
+            ToolbarItem(placement: .topBarLeading){
+                Text(dish.name)
+                    .font(.custom("PlusJakartaSans-Regular", size: 18))
+                    .bold()
+            }
+        }
+       
+        .navigationBarTitleDisplayMode(.automatic)
         .toolbar {
                ToolbarItem(placement: .topBarLeading) {
                    Button(action: {
@@ -55,10 +62,7 @@ struct DishDetailView: View {
               
            }
         .navigationBarBackButtonHidden()
-    }
-    
-        
-        
+    }       
 }
 
 #Preview {

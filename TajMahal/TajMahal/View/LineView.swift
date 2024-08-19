@@ -8,22 +8,22 @@
 import SwiftUI
 
 struct LineView: View {
-    let imageName: String
+    let image: String
     let leftText: String
     let rightText: String
     var body: some View {
         HStack {
-            Image(systemName:imageName)
+            Image(image)
             Text(leftText)
             Spacer()
             Text(rightText)
         }
         .font(.custom("PlusJakartaSans-Regular", size: 12))
-        .foregroundStyle(.secondary)
+        .foregroundStyle(.gray)
         .padding()
     }
 }
 
 #Preview {
-    LineView(imageName: "clock", leftText: "12 Avenue de la Brique - 75010 Paris", rightText:"Right")
+    LineView(image: "Vector", leftText: "12 Avenue de la Brique - 75010 Paris", rightText:"Right")
 }
