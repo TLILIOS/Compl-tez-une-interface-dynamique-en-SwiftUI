@@ -13,25 +13,8 @@ enum SpiceLevel {
     case light
     case medium
     case hot
-  
-//    func spicylevelView(spiceLevel: SpiceLevel ) -> View {
-//        
-//        switch self {
-//        case .light:
-//            
-//            SpicyLightLevelView()
-////                .offset(x: 130, y: -210)
-//        case .medium:
-//            SpicyMediumLevelView()
-////                .offset(x: 130, y: -210)
-//        case .hot:
-//            SpicyHotLevelView()
-////                .offset(x: 130, y: -210)
-//        }
-//    }
+    
 }
-
-
 // Représente l'objet "plat", qui figure sur la carte du menu
 struct Dish: Identifiable, Hashable {
     var id = UUID()

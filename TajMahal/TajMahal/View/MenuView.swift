@@ -18,28 +18,30 @@ struct MenuView: View {
     @Environment(\.presentationMode) var presentationMode
     var body: some View {
         NavigationStack {
-            List {
-               
-                    Section(header: Text("Entrées").textCase(nil)) {
-                        ForEach(starters, id: \.self)
-                        { starter in
+            ScrollView {
+                VStack(alignment: .leading, spacing: 16) {
+                    // Section for Starters
+                    Text("Entrées")
+                        .font(.custom("PlusJakartaSans-Regular", size: 12))
+                        .padding(.leading)
+                    VStack(spacing: 8) {
+                        
+                        ForEach(starters, id: \.self) { starter in
                             
-                            NavigationLink {
+                            NavigationLink(destination: DishDetailView(dish: starter)) {
                                 
-                                DishDetailView(dish: starter)
+                                DishCell(spiceLevel: starter.spiceLevel, dish: starter).font(.custom("PlusJakartaSans-Regular", size: 14))
                             }
-                        label: {
-                            DishCell(spiceLevel: starter.spiceLevel, dish: starter)
-                        }
-                        .listRowBackground(Color.clear)
-                        .listRowSeparator(.hidden)
                             
                         }
                     }
-                    
-                    Section(header: Text("Plats Principaux").textCase(nil)) {
-                        ForEach(plats, id: \.self) {
-                            plat in
+                    .padding([.leading, .trailing, .vertical])
+                    // Section for Main Courses
+                    Text("Plats Principaux")
+                        .font(.custom("PlusJakartaSans-Regular", size: 12))
+                        .padding(.leading)
+                    VStack(spacing: 8) {
+                        ForEach(plats, id: \.self) { plat in
                             NavigationLink {
                                 DishDetailView(dish: plat)
                             } label: {
@@ -47,24 +49,27 @@ struct MenuView: View {
                             }
                         }
                     }
-            }
-            .navigationTitle("Menu")
-            //        .font(.custom("PlusJakartaSans-Regular", size: 18))
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
-                    Button(action: {
-                        presentationMode.wrappedValue.dismiss()
-                    }) { Image(systemName: "chevron.left")
-                            .foregroundStyle(.black)
+                    .padding([.leading, .trailing])
+                }
+                }
+            .background(Color.customGray)
+                .navigationTitle("Menu")
+                        .font(.custom("PlusJakartaSans-Regular", size: 18))
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .topBarLeading) {
+                        Button(action: {
+                            presentationMode.wrappedValue.dismiss()
+                        }) { Image(systemName: "chevron.left")
+                                .foregroundStyle(.black)
+                        }
                     }
                 }
+                .navigationBarBackButtonHidden()
+                
             }
-            .navigationBarBackButtonHidden()
-            
         }
     }
-}
 
 #Preview {
     MenuView()

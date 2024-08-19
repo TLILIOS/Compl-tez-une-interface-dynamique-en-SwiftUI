@@ -22,13 +22,17 @@ struct DishCell: View {
             VStack(alignment: .leading, spacing: 8) {
                 Text(dish.name)
                     .font(.custom("PlusJakartaSans-Regular", size: 14))
+                    .foregroundStyle(.black)
                 
                 Text(dish.description)
                     .font(.custom("PlusJakartaSans-Regular", size: 12))
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(.gray)
+                    .multilineTextAlignment(.leading)
+                    
                 HStack {
                     Text("\(dish.price) €")
                         .font(.custom("PlusJakartaSans-Regular", size: 12))
+                        .foregroundStyle(.gray)
                     Spacer()
                     SpiceLevelView(spiceLevel: dish.spiceLevel)
                 }

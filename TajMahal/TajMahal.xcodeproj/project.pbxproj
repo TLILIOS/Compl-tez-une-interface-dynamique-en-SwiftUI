@@ -79,8 +79,6 @@
 				57268FA32C6BD7D200E0AF2F /* Font */,
 				57195AD82C51627700FC9630 /* Model */,
 				57195AD92C5162AE00FC9630 /* View */,
-				57195AD62C515E2F00FC9630 /* DishCell.swift */,
-				5745F6292C4DB99E008D528B /* LineView.swift */,
 				42E9DCAD2AF11136007CE7D0 /* TajMahalApp.swift */,
 				42E9DCB12AF11138007CE7D0 /* Assets.xcassets */,
 				42E9DCC02AF11662007CE7D0 /* Info.plist */,
@@ -109,6 +107,8 @@
 		57195AD92C5162AE00FC9630 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5745F6292C4DB99E008D528B /* LineView.swift */,
+				57195AD62C515E2F00FC9630 /* DishCell.swift */,
 				42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */,
 				42E9DCC12AF117AE007CE7D0 /* MenuView.swift */,
 				574B2C562C50689000A713E3 /* DishDetailView.swift */,
