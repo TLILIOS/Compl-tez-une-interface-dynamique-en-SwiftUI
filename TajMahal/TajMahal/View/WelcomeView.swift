@@ -15,16 +15,17 @@ struct WelcomeView: View {
                 Spacer()
                 Image("TajMahal")
                     .resizable()
-                    .frame(width: 335, height: 423)
                     .scaledToFill()
+                    .frame(width: 335, height: 423)
                     .padding()
                 HStack {
                     VStack(alignment: .leading) {
                         Text("Restaurent Indien")
-                            .font(.custom("PlusJakartaSans-Regular", size: 12))
-                            .foregroundStyle(.secondary)
+                            .font(.plusJakartaSansRegular(size: 12))
+                            .foregroundStyle(.customFont)
                         Text("Taj Mahal")
-                            .font(.custom("PlusJakartaSans-Regular", size: 18))
+                            .font(.plusJakartaSansRegular(size: 18))
+                            .foregroundStyle(.fontColorBold)
                             .bold()
                     }
                     Spacer()
@@ -34,7 +35,7 @@ struct WelcomeView: View {
                         .frame(width: 40, height: 40)
                         .colorInvert()
                         .opacity(0.5)
-                  }
+                }
                 .padding(.horizontal)
                 VStack(spacing: -20) {
                     LineView(image: "Vector", leftText: "Mardi", rightText: "11h30 - 14h30・18h30 - 22h00")
@@ -43,8 +44,7 @@ struct WelcomeView: View {
                     LineView(image: "Globe", leftText: "www.tajmahal.fr", rightText: "")
                     LineView(image: "Téléphone", leftText: "0612345678", rightText: "")
                 }
-                
-
+                Spacer()
                 NavigationLink {
                     MenuView()
                 } label : {
@@ -53,24 +53,22 @@ struct WelcomeView: View {
                             .frame(width: 335, height: 40)
                             .foregroundStyle(.customRed)
                             .frame(height: 40)
-                        Text("Accéder au menu")
-                            .font(.custom("PlusJakartaSans-Regular", size: 16))
+                        Text("Accéder au Menu")
+                            .font(.PlusJakartaSansBold(size: 16))
                             .foregroundColor(.white)
-                            .bold()
-                            
+                        
+                        
                     }
-
+                    
                     
                 }
-                
-                Spacer()
-                    
-            } 
+            }
             .padding([.horizontal, .bottom])
             
-        } 
-    
+        }
+        
     }
+    
 }
 
 #Preview {

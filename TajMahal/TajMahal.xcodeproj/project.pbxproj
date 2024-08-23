@@ -19,10 +19,12 @@
 		57195ADD2C52561D00FC9630 /* SpicyMediumLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57195ADC2C52561D00FC9630 /* SpicyMediumLevelView.swift */; };
 		57195ADF2C52563F00FC9630 /* SpicyLightLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57195ADE2C52563E00FC9630 /* SpicyLightLevelView.swift */; };
 		57195AE32C585C1600FC9630 /* SpiceLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57195AE22C585C1600FC9630 /* SpiceLevelView.swift */; };
-		57268FAE2C6D1E0B00E0AF2F /* PlusJakartaSans-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57268FAD2C6D1E0B00E0AF2F /* PlusJakartaSans-VariableFont_wght.ttf */; };
-		57268FB12C6D20B200E0AF2F /* PlusJakartaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57268FB02C6D20B200E0AF2F /* PlusJakartaSans-Regular.ttf */; };
 		5745F62A2C4DB99E008D528B /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745F6292C4DB99E008D528B /* LineView.swift */; };
 		574B2C572C50689000A713E3 /* DishDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574B2C562C50689000A713E3 /* DishDetailView.swift */; };
+		575F42AE2C780C3300EDC9A8 /* PlusJakartaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 575F42A62C780C3300EDC9A8 /* PlusJakartaSans-Bold.ttf */; };
+		575F42AF2C780C3300EDC9A8 /* PlusJakartaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 575F42A82C780C3300EDC9A8 /* PlusJakartaSans-Regular.ttf */; };
+		575F42B02C780C3300EDC9A8 /* PlusJakartaSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 575F42AA2C780C3300EDC9A8 /* PlusJakartaSans-SemiBold.ttf */; };
+		575F42B12C780C3300EDC9A8 /* PlusJakartaSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 575F42AC2C780C3300EDC9A8 /* PlusJakartaSans-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,10 +42,12 @@
 		57195ADC2C52561D00FC9630 /* SpicyMediumLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpicyMediumLevelView.swift; sourceTree = "<group>"; };
 		57195ADE2C52563E00FC9630 /* SpicyLightLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpicyLightLevelView.swift; sourceTree = "<group>"; };
 		57195AE22C585C1600FC9630 /* SpiceLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiceLevelView.swift; sourceTree = "<group>"; };
-		57268FAD2C6D1E0B00E0AF2F /* PlusJakartaSans-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-VariableFont_wght.ttf"; sourceTree = "<group>"; };
-		57268FAF2C6D20B200E0AF2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = "Base.lproj/PlusJakartaSans-Regular.ttf"; sourceTree = "<group>"; };
 		5745F6292C4DB99E008D528B /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		574B2C562C50689000A713E3 /* DishDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailView.swift; sourceTree = "<group>"; };
+		575F42A72C780C3300EDC9A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = "Base.lproj/PlusJakartaSans-Bold.ttf"; sourceTree = "<group>"; };
+		575F42A92C780C3300EDC9A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = "Base.lproj/PlusJakartaSans-Regular.ttf"; sourceTree = "<group>"; };
+		575F42AB2C780C3300EDC9A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = "Base.lproj/PlusJakartaSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		575F42AD2C780C3300EDC9A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = "Base.lproj/PlusJakartaSans-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,8 +127,10 @@
 		57268FA32C6BD7D200E0AF2F /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				57268FB02C6D20B200E0AF2F /* PlusJakartaSans-Regular.ttf */,
-				57268FAD2C6D1E0B00E0AF2F /* PlusJakartaSans-VariableFont_wght.ttf */,
+				575F42A62C780C3300EDC9A8 /* PlusJakartaSans-Bold.ttf */,
+				575F42AC2C780C3300EDC9A8 /* PlusJakartaSans-Medium.ttf */,
+				575F42A82C780C3300EDC9A8 /* PlusJakartaSans-Regular.ttf */,
+				575F42AA2C780C3300EDC9A8 /* PlusJakartaSans-SemiBold.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -187,10 +193,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				575F42AE2C780C3300EDC9A8 /* PlusJakartaSans-Bold.ttf in Resources */,
+				575F42B12C780C3300EDC9A8 /* PlusJakartaSans-Medium.ttf in Resources */,
+				575F42AF2C780C3300EDC9A8 /* PlusJakartaSans-Regular.ttf in Resources */,
+				575F42B02C780C3300EDC9A8 /* PlusJakartaSans-SemiBold.ttf in Resources */,
 				42E9DCB52AF11138007CE7D0 /* Preview Assets.xcassets in Resources */,
-				57268FB12C6D20B200E0AF2F /* PlusJakartaSans-Regular.ttf in Resources */,
 				42E9DCB22AF11138007CE7D0 /* Assets.xcassets in Resources */,
-				57268FAE2C6D1E0B00E0AF2F /* PlusJakartaSans-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,12 +227,36 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		57268FB02C6D20B200E0AF2F /* PlusJakartaSans-Regular.ttf */ = {
+		575F42A62C780C3300EDC9A8 /* PlusJakartaSans-Bold.ttf */ = {
 			isa = PBXVariantGroup;
 			children = (
-				57268FAF2C6D20B200E0AF2F /* Base */,
+				575F42A72C780C3300EDC9A8 /* Base */,
+			);
+			name = "PlusJakartaSans-Bold.ttf";
+			sourceTree = "<group>";
+		};
+		575F42A82C780C3300EDC9A8 /* PlusJakartaSans-Regular.ttf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				575F42A92C780C3300EDC9A8 /* Base */,
 			);
 			name = "PlusJakartaSans-Regular.ttf";
+			sourceTree = "<group>";
+		};
+		575F42AA2C780C3300EDC9A8 /* PlusJakartaSans-SemiBold.ttf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				575F42AB2C780C3300EDC9A8 /* Base */,
+			);
+			name = "PlusJakartaSans-SemiBold.ttf";
+			sourceTree = "<group>";
+		};
+		575F42AC2C780C3300EDC9A8 /* PlusJakartaSans-Medium.ttf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				575F42AD2C780C3300EDC9A8 /* Base */,
+			);
+			name = "PlusJakartaSans-Medium.ttf";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -363,8 +395,8 @@
 				INFOPLIST_FILE = TajMahal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,8 +424,8 @@
 				INFOPLIST_FILE = TajMahal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

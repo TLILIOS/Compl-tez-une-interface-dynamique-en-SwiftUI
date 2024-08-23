@@ -6,15 +6,7 @@
 //
 
 import Foundation
-import SwiftUI
-// Cette enumération répertorie 3 niveaux de piment
-enum SpiceLevel {
-    //To be fexe
-    case light
-    case medium
-    case hot
-    
-}
+
 // Représente l'objet "plat", qui figure sur la carte du menu
 struct Dish: Identifiable, Hashable {
     var id = UUID()
@@ -25,4 +17,9 @@ struct Dish: Identifiable, Hashable {
     var spiceLevel: SpiceLevel
     var imageName: String
     var price: String
+}
+// Cette enumération répertorie 3 niveaux de piment
+enum SpiceLevel: String {
+    case light, medium, hot
+    
 }

@@ -11,6 +11,7 @@ struct LineView: View {
     let image: String
     let leftText: String
     let rightText: String
+    
     var body: some View {
         HStack {
             Image(image)
@@ -18,8 +19,8 @@ struct LineView: View {
             Spacer()
             Text(rightText)
         }
-        .font(.custom("PlusJakartaSans-Regular", size: 12))
-        .foregroundStyle(.gray)
+        .font(.PlusJakartaSansMedium(size: 12))
+        .foregroundStyle(.customFont)
         .padding()
     }
 }

@@ -11,74 +11,81 @@ import SwiftUI
 struct MenuView: View {
     // Référence vers le view model qui permet d'accéder aux tableaux d'entrées et de plats du menu
     
-    var spiceLevel: SpiceLevel = .light
-    var starters: [Dish] = ViewModel.apetizerArray
-    var plats: [Dish] = ViewModel.mainCourseArray
+    @State var starters: [Dish] = ViewModel.apetizerArray
+    @State var plats: [Dish] = ViewModel.mainCourseArray
     
     @Environment(\.presentationMode) var presentationMode
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack(alignment: .leading, spacing: 16) {
+                LazyVStack(alignment: .leading, spacing: 10) {
+                    SectionHeaderView(title: "Entrées")
+                    DishListView(dishes: starters)
+                    
+                    SectionHeaderView(title: "Plats Principaux")
+                    DishListView(dishes: plats)
                     // Section for Starters
-                    Text("Entrées")
-                        .font(.custom("PlusJakartaSans-Regular", size: 12))
-                        .padding(.leading)
-                    VStack(spacing: 8) {
-                        
-                        ForEach(starters, id: \.self) { starter in
-                            
-                            NavigationLink(destination: DishDetailView(dish: starter)) {
-                                
-                                DishCell(spiceLevel: starter.spiceLevel, dish: starter).font(.custom("PlusJakartaSans-Regular", size: 14))
-                            }
-                            
-                        }
-                    }
-                    .padding([.leading, .trailing, .vertical])
-                    // Section for Main Courses
-                    Text("Plats Principaux")
-                        .font(.custom("PlusJakartaSans-Regular", size: 12))
-                        .padding(.leading)
-                    VStack(spacing: 8) {
-                        ForEach(plats, id: \.self) { plat in
-                            NavigationLink {
-                                DishDetailView(dish: plat)
-                            } label: {
-                                DishCell(spiceLevel: plat.spiceLevel, dish: plat)
-                            }
-                        }
-                    }
-                    .padding([.leading, .trailing])
                 }
-                }
-            .background(Color.customGray)
+            }
+            
+            .background(Color.menuBackground)
             //The ToolbarItem Title MENU
-                .navigationTitle("")
-                .navigationBarTitleDisplayMode(.inline)
-                .toolbar {
-                    ToolbarItem(placement: .principal) {
-                        Text("Menu")
-                            .font(.custom("PlusJakartaSans-Regular", size: 18))
-                            .bold()
-                    }
+            .navigationTitle("")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("Menu")
+                        .font(.PlusJakartaSansSemiBold(size: 18))
+                    
+                        .bold()
                 }
+            }
             
             //Button chevron.left to GoBack
-                .toolbar {
-                    ToolbarItem(placement: .topBarLeading) {
-                        Button(action: {
-                            presentationMode.wrappedValue.dismiss()
-                        }) { Image(systemName: "chevron.left")
-                                .foregroundStyle(.black)
-                        }
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button(action: {
+                        presentationMode.wrappedValue.dismiss()
+                    }) { Image(systemName: "chevron.left")
+                            .foregroundStyle(.black)
                     }
                 }
-                .navigationBarBackButtonHidden()
+            }
+            .navigationBarBackButtonHidden()
+        }
+    }
+    
+}
+
+struct SectionHeaderView: View {
+    var title: String
+    var body: some View {
+        Text(title)
+            .font(.PlusJakartaSansSemiBold(size: 12))
+            .padding([.leading, .top])
+    }
+}
+
+struct DishListView: View {
+    var dishes: [Dish]
+    var body: some View {
+        
+        VStack(spacing: 8) {
+            
+            ForEach(dishes, id: \.self) { dish in
+                
+                NavigationLink(destination: DishDetailView(dish: dish)) {
+                    
+                    DishCell(dish: dish)
+                        .font(.plusJakartaSansRegular(size: 14))
+                }
                 
             }
         }
+        .padding([.leading, .trailing])
     }
+    
+}
 
 #Preview {
     MenuView()
