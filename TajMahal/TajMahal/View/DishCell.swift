@@ -56,17 +56,4 @@ struct DishCell: View {
     DishCell(dish: ViewModel.mainCourseArray[0])
 }
 
-extension Font {
-    static func plusJakartaSansRegular(size: CGFloat) -> Font {
-        .custom("PlusJakartaSans-Regular", size: size)
-    }
-    static func PlusJakartaSansBold(size: CGFloat) -> Font {
-        .custom("PlusJakartaSans-Bold", size: size)
-    }
-    static func PlusJakartaSansSemiBold(size: CGFloat) -> Font {
-        .custom("PlusJakartaSans-SemiBold", size: size)
-    }
-    static func PlusJakartaSansMedium(size: CGFloat) -> Font {
-        .custom("PlusJakartaSans-Medium", size: size)
-    }
-}
+
